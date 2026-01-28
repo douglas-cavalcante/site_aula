@@ -1,5 +1,10 @@
-<html>
-  <head></head>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
   <body>
     <!-- Tags para titulo -->
     <h1>Meu primeiro site HTML</h1>
@@ -8,7 +13,6 @@
     <h4>eu sou um h4</h4>
     <h5>eu sou um h5</h5>
     <h6>eu sou um h6</h6>
-
     <!-- Tags para paragrafo -->
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto
@@ -23,6 +27,7 @@
       alt="foto de preparacao de alimento"
     />
     <br />
+    <!-- Tags para link -->
     <a href="https://br.freepik.com/empresa/sobre-nos">
       <img
         src="./assets/imagem_saude.jpg"
@@ -31,23 +36,27 @@
       />
     </a>
     <br />
-    <!-- Tags para link -->
     <a href="https://br.freepik.com/empresa/sobre-nos" target="_blank"
       >Ir para freepik</a
     >
+    <a href="sobre.html">Ir para tela sobre</a>
     <br />
     <!-- Tags para botoes -->
     <button>Cadastrar novo registro</button>
     <br />
-    <a href="sobre.html">Ir para tela sobre</a>
     <!-- Tags para Video -->
-    <video src="./assets/melancia.mp4" controls autoplay loop></video>
-    <video width="100px">
-      <source src="https://youtu.be/pRHzSpmhlrM" />
-    </video>
+    <video src="./assets/melancia.mp4" controls autoplay muted loop></video>
+    <iframe
+      width="400"
+      height="890"
+      src="https://www.youtube.com/embed/wN6CHIklmys"
+      title="Minha Escola SENAI"
+      frameborder="0"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
     <br />
-
-    <!-- Lista nao enumerada -->
+    <!-- Lista nao enumerada com lista enumerada -->
     <h2>Trabalho de programaor Fullstask</h2>
     <ul>
       <li>HTML</li>
@@ -61,5 +70,32 @@
         </ol>
       </li>
     </ul>
+    <!--Tabelas -->
+    <table border="1" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Observacao</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chocolate</td>
+          <td>20</td>
+          <td>Comprar cacau 70%</td>
+        </tr>
+        <tr>
+          <td>Arroz</td>
+          <td>3</td>
+          <td>Pegar da marca X</td>
+        </tr>
+        <tr>
+          <td>Feijao</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
