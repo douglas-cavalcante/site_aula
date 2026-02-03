@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ifood</title>
+    <style>
+      .container_principal {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .container_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        width: 60px;
+        object-fit: contain;
+      }
+
+      .menu {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      .menu a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #3e3e3e;
+      }
+
+      .criar_conta_link {
+        font-size: 16px;
+        color: #ea1d2c;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .botao_entrar {
+        background-color: #ea1d2c;
+        width: 100px;
+        height: 44px;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+      }
+
+      .botao_entrar:hover {
+        cursor: pointer;
+        background-color: #e53945;
+        /* opacity: 0.8; retirar opacidade do elemento */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_principal">
+      <div class="container_menu">
+        <img src="../assets/ifood_logo.png" class="logo" alt="Logo do Ifood" />
+        <ul class="menu">
+          <li><a href="#">Entregador</a></li>
+          <li><a href="#">Restaurante e Mercado</a></li>
+          <li><a href="#">Carreira</a></li>
+          <li><a href="#">Ifood</a></li>
+          <li><a href="#">Empresas</a></li>
+        </ul>
+        <div>
+          <a class="criar_conta_link" href="#">Criar Conta</a>
+          <button class="botao_entrar">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
