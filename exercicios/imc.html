@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMC</title>
+    <script src="./script.js"></script>
 
     <style>
       body {
@@ -76,10 +77,23 @@
         margin-top: 10px;
         border: none;
       }
+
+      .resultado {
+        display: none;
+        background-color: #eff6ff;
+        height: 100px;
+        border-radius: 8px;
+        padding: 10px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+      }
     </style>
   </head>
   <body>
-    <div class="container_principal">
+    <div class="container_principal" id="container_principal">
       <h1 class="titulo">Calculadora de IMC</h1>
       <p class="descricao">Descubra seu Índice de Massa Corporal</p>
 
@@ -99,8 +113,14 @@
         placeholder="Digite seu Peso"
       />
 
-      <button class="botao_calcular">Calcular</button>
+      <button class="botao_calcular" onclick="calcular()">Calcular</button>
       <button>Limpar</button>
+
+      <div class="resultado" id="resultado">
+        <p>Seu IMC é</p>
+        <p id="resultado_imc"></p>
+        <p>Abaixo do peso</p>
+      </div>
     </div>
   </body>
 </html>
