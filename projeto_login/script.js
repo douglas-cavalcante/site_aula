@@ -12,5 +12,27 @@ console.log("Funcionando");
 */
 
 function realizarLogin() {
-  window.location.href = "home.html";
+  var email = document.getElementById("email").value;
+  var senha = document.getElementById("senha").value;
+
+  /* Usamos 3 sinais de === para comparar tanto o valor quanto o tipo da informacao */
+  if (email === "senai@gmail.com" && senha === "senai") {
+    window.location.href = "./home.html";
+  } else {
+    alert("Crendeciais incorreta");
+  }
+}
+
+function exibirSenha() {
+  var tipo_atual = document.getElementById("senha").type;
+
+  /* Condicao com IF ternario
+  document.getElementById(senha).type = tipo_atual === "text" ? "password" : "text"
+  */
+
+  if (tipo_atual === "text") {
+    document.getElementById("senha").type = "password";
+  } else if (tipo_atual === "password") {
+    document.getElementById("senha").type = "text";
+  }
 }
