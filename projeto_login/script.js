@@ -15,8 +15,19 @@ function realizarLogin() {
   var email = document.getElementById("email").value;
   var senha = document.getElementById("senha").value;
 
-  /* Usamos 3 sinais de === para comparar tanto o valor quanto o tipo da informacao */
+  if (!email) {
+    document.getElementById("email").style.borderColor = "tomato";
+    // document.getElementById("error_email").innerText = "O email e obrigatorio";
+    return;
+  }
+
+  if (!senha) {
+    document.getElementById("senha").style.borderColor = "tomato";
+    return;
+  }
+
   if (email === "senai@gmail.com" && senha === "senai") {
+    /* Usamos 3 sinais de === para comparar tanto o valor quanto o tipo da informacao */
     window.location.href = "./home.html";
   } else {
     alert("Crendeciais incorreta");
