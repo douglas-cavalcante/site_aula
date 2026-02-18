@@ -1,5 +1,29 @@
+function pegarDescricaoIMC(imc) {
+  if (imc < 18.5) {
+    return "Abaixo do peso";
+  } else if (imc < 25) {
+    return "Peso normal";
+  } else if (imc < 30) {
+    return "Sobrepeso";
+  } else if (imc < 35) {
+    return "Obesidade grau I";
+  } else if (imc < 40) {
+    return "Obesidade grau II";
+  } else {
+    return "Obesidade grau III";
+  }
+}
+
+function resetForm() {
+  // resetar campo de altura
+  document.getElementById("altura").value = "";
+  document.getElementById("peso").value = "";
+  document.getElementById("resultado").style.display = "none";
+}
+
 function calcular() {
   // Entrada
+
   var altura = Number(document.getElementById("altura").value);
   var peso = Number(document.getElementById("peso").value);
 
@@ -28,7 +52,10 @@ function calcular() {
 
   /* 4 Forma -  Exibir conteudo que estava escondido */
   document.getElementById("resultado").style.display = "flex";
-  document.getElementById("resultado_imc").append(resultado);
+  document.getElementById("resultado_imc").innerText = resultado.toFixed(2);
+
+  document.getElementById("resultado_descricao").innerText =
+    pegarDescricaoIMC(resultado);
 
   /* if (!altura) {
     document.getElementById("altura").style.borderColor = "red";
