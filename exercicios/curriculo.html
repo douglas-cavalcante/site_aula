@@ -97,6 +97,26 @@
         border: 0.5px #3498db solid;
       }
 
+      /* Esse estilo vai ser aplicado da resolucao setada para baixo */
+
+      @media (max-width: 800px) {
+        .container_informacao_contato {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      /* Esse estilo vai ser aplicado para acima de */
+      @media (min-width: 600px) {
+        body {
+          background-color: #000;
+        }
+
+        .separador {
+          border-color: red;
+        }
+      }
+
       /*
       .secao_experiencia {
         color: purple !important;
