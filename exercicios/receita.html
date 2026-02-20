@@ -49,6 +49,10 @@
         padding: 5px;
       }
 
+      .descricao_receita {
+        text-align: justify;
+      }
+
       .tabela_nutricional {
         width: 50%;
         border-collapse: collapse;
@@ -68,6 +72,28 @@
 
       .tabela_nutricional tr:hover {
         background-color: rgb(187, 187, 177);
+      }
+
+      @media (min-width: 400px) and (max-width: 600px) {
+        .tabela_nutricional {
+          color: red;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .tabela_nutricional {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .imagem_receita {
+          width: 200px;
+        }
+
+        .container_nome_receita {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -93,7 +119,7 @@
       </div>
 
       <h2 class="secao_pagina">Descricao do prato</h2>
-      <p>
+      <p class="descricao_receita">
         Um delicioso frango assado dourado e suculento, temperado com ervas
         aromáticas e especiarias que realçam o sabor natural da carne. Perfeito
         para refeições em família ou ocasiões especiais, este prato clássico
