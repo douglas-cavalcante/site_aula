@@ -1,4 +1,8 @@
 const img = document.getElementById("imgDblClick");
-img.addEventListener("dblclick", function () {
+
+function clique2vezes() {
+  document.getElementById("imgDblClick").setAttribute("src", "123");
   alert("Imagem em Full Screen!");
-});
+}
+
+img.addEventListener("dblclick", clique2vezes);
