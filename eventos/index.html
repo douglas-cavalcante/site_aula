@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplos de Eventos JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+      }
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+      }
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px #0001;
+        padding: 24px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: box-shadow 0.2s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 16px #0002;
+      }
+      .card h2 {
+        margin: 0 0 8px 0;
+        font-size: 1.2em;
+      }
+      .card p {
+        margin: 0 0 12px 0;
+        color: #444;
+        font-size: 1em;
+      }
+      .card pre {
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 0.95em;
+        overflow-x: auto;
+      }
+      .card a {
+        margin-top: auto;
+        align-self: flex-end;
+        background: #007bff;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .card a:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exemplos de Eventos JavaScript</h1>
+      <div class="cards">
+        <!-- Os cards serão inseridos aqui pelo script -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
